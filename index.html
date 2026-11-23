@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brick Breach</title>
+<meta name="description" content="Brick Breach, a brick-breaking puzzle game for Android">
+<style>
+:root{--bg:#0A0F2A;--card:#151C3A;--text:#F4F6FF;--sub:#9BA4D4;--line:#2A3566;--accent:#3DD9A6;--gold:#FFB84A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Apple SD Gothic Neo",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:26px;line-height:1.3;margin:8px 0 4px}
+h2{font-size:18px;margin:28px 0 8px;color:var(--gold)}
+p{margin:0 0 10px}
+.date{color:var(--sub);margin-bottom:18px}
+a{color:var(--accent)}
+nav.lang{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+nav.lang button{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
+nav.lang button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+section[lang]{display:none}
+section[lang].on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 8px;margin:14px 0}
+footer{color:var(--sub);font-size:14px;margin-top:32px}
+</style>
+</head>
+<body>
+<main>
+<nav class="lang" aria-label="Language"><button type="button" id="b-en" aria-pressed="false">English</button><button type="button" id="b-ko" aria-pressed="false">한국어</button><button type="button" id="b-de" aria-pressed="false">Deutsch</button><button type="button" id="b-fr" aria-pressed="false">Français</button><button type="button" id="b-es" aria-pressed="false">Español</button><button type="button" id="b-it" aria-pressed="false">Italiano</button><button type="button" id="b-nl" aria-pressed="false">Nederlands</button><button type="button" id="b-ja" aria-pressed="false">日本語</button><button type="button" id="b-zh-TW" aria-pressed="false">繁體中文</button><button type="button" id="b-zh-CN" aria-pressed="false">简体中文</button><button type="button" id="b-pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" id="b-ru" aria-pressed="false">Русский</button><button type="button" id="b-tr" aria-pressed="false">Türkçe</button><button type="button" id="b-pl" aria-pressed="false">Polski</button><button type="button" id="b-id" aria-pressed="false">Bahasa Indonesia</button><button type="button" id="b-vi" aria-pressed="false">Tiếng Việt</button><button type="button" id="b-th" aria-pressed="false">ภาษาไทย</button><button type="button" id="b-hi" aria-pressed="false">हिन्दी</button><button type="button" id="b-ar" aria-pressed="false">العربية</button></nav>
+<section lang="en" id="s-en"><h1>Brick Breach</h1><p>A brick-breaking puzzle game for Android.</p><div class="card"><p><a href="privacy.html#en">Privacy policy</a></p><p>Contact: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="ko" id="s-ko"><h1>Brick Breach</h1><p>안드로이드 벽돌 깨기 퍼즐 게임</p><div class="card"><p><a href="privacy.html#ko">개인정보처리방침</a></p><p>연락처: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="de" id="s-de"><h1>Brick Breach</h1><p>Ein Steine-Zerbrech-Puzzlespiel für Android.</p><div class="card"><p><a href="privacy.html#de">Datenschutzerklärung</a></p><p>Kontakt: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="fr" id="s-fr"><h1>Brick Breach</h1><p>Un jeu de puzzle casse-briques pour Android.</p><div class="card"><p><a href="privacy.html#fr">Politique de confidentialité</a></p><p>Contact: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="es" id="s-es"><h1>Brick Breach</h1><p>Un juego de puzles rompeladrillos para Android.</p><div class="card"><p><a href="privacy.html#es">Política de privacidad</a></p><p>Contacto: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="it" id="s-it"><h1>Brick Breach</h1><p>Un puzzle game spaccamattoni per Android.</p><div class="card"><p><a href="privacy.html#it">Informativa sulla privacy</a></p><p>Contatti: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="nl" id="s-nl"><h1>Brick Breach</h1><p>Een stenenbreek-puzzelgame voor Android.</p><div class="card"><p><a href="privacy.html#nl">Privacybeleid</a></p><p>Contact: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="ja" id="s-ja"><h1>Brick Breach</h1><p>Android向けのブロック崩しパズルゲーム</p><div class="card"><p><a href="privacy.html#ja">プライバシーポリシー</a></p><p>お問い合わせ: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="zh-TW" id="s-zh-TW"><h1>Brick Breach</h1><p>Android 打磚塊益智遊戲</p><div class="card"><p><a href="privacy.html#zh-TW">隱私權政策</a></p><p>聯絡我們: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="zh-CN" id="s-zh-CN"><h1>Brick Breach</h1><p>Android 打砖块益智游戏</p><div class="card"><p><a href="privacy.html#zh-CN">隐私政策</a></p><p>联系我们: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="pt-BR" id="s-pt-BR"><h1>Brick Breach</h1><p>Um jogo de quebra-cabeça de quebrar tijolos para Android.</p><div class="card"><p><a href="privacy.html#pt-BR">Política de privacidade</a></p><p>Contato: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="ru" id="s-ru"><h1>Brick Breach</h1><p>Головоломка с разбиванием кирпичей для Android.</p><div class="card"><p><a href="privacy.html#ru">Политика конфиденциальности</a></p><p>Контакты: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="tr" id="s-tr"><h1>Brick Breach</h1><p>Android için tuğla kırma bulmaca oyunu.</p><div class="card"><p><a href="privacy.html#tr">Gizlilik politikası</a></p><p>İletişim: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="pl" id="s-pl"><h1>Brick Breach</h1><p>Gra logiczna w rozbijanie cegieł na Androida.</p><div class="card"><p><a href="privacy.html#pl">Polityka prywatności</a></p><p>Kontakt: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="id" id="s-id"><h1>Brick Breach</h1><p>Game puzzle pemecah bata untuk Android.</p><div class="card"><p><a href="privacy.html#id">Kebijakan privasi</a></p><p>Kontak: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="vi" id="s-vi"><h1>Brick Breach</h1><p>Trò chơi giải đố phá gạch cho Android.</p><div class="card"><p><a href="privacy.html#vi">Chính sách quyền riêng tư</a></p><p>Liên hệ: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="th" id="s-th"><h1>Brick Breach</h1><p>เกมพัซเซิลทุบอิฐสำหรับ Android</p><div class="card"><p><a href="privacy.html#th">นโยบายความเป็นส่วนตัว</a></p><p>ติดต่อ: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="hi" id="s-hi"><h1>Brick Breach</h1><p>Android के लिए ईंट तोड़ने वाला पहेली गेम।</p><div class="card"><p><a href="privacy.html#hi">गोपनीयता नीति</a></p><p>संपर्क: {{CONTACT_EMAIL}}</p></div></section>
+<section lang="ar" id="s-ar" dir="rtl"><h1>Brick Breach</h1><p>لعبة ألغاز لتحطيم الطوب على Android.</p><div class="card"><p><a href="privacy.html#ar">سياسة الخصوصية</a></p><p>التواصل: {{CONTACT_EMAIL}}</p></div></section>
+</main>
+<script>
+(function(){
+  var codes=["en", "ko", "de", "fr", "es", "it", "nl", "ja", "zh-TW", "zh-CN", "pt-BR", "ru", "tr", "pl", "id", "vi", "th", "hi", "ar"];
+  function show(c){
+    codes.forEach(function(k){
+      var s=document.getElementById('s-'+k), b=document.getElementById('b-'+k);
+      if(s){s.classList.toggle('on',k===c);} if(b){b.setAttribute('aria-pressed',k===c?'true':'false');}
+    });
+    document.documentElement.lang=c; document.documentElement.dir=(["ar"].indexOf(c)>=0)?'rtl':'ltr';
+  }
+  var want=(location.hash||'').replace('#','');
+  if(codes.indexOf(want)<0){
+    var nav=(navigator.languages&&navigator.languages[0])||navigator.language||'en';
+    var n=nav.toLowerCase(); want=n.slice(0,2);
+    if(want==='zh'){want=(/hant|tw|hk|mo/.test(n))?'zh-TW':'zh-CN';}
+    else if(want==='pt'){want='pt-BR';}
+    else if(want==='in'){want='id';}
+    if(codes.indexOf(want)<0){want='en';}
+  }
+  codes.forEach(function(k){var b=document.getElementById('b-'+k); if(b){b.addEventListener('click',function(){show(k); history.replaceState(null,'','#'+k);});}});
+  show(want);
+  window.addEventListener('hashchange',function(){var h=(location.hash||'').replace('#',''); if(codes.indexOf(h)>=0){show(h);}});
+})();
+</script>
+</body>
+</html>
